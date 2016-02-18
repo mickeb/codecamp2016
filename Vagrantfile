@@ -21,7 +21,7 @@ Vagrant.configure(2) do |config|
   end
 
   config.vm.define "webgoat" do |webgoat|
-    webgoat.vm.box = "mickeb/mejslawebgoat"
+    webgoat.vm.box = "mickeb/mejslawebgoat2"
 
     webgoat.vm.network "private_network", type: "dhcp"
 
