@@ -7,7 +7,7 @@
 # you're doing.
 Vagrant.configure(2) do |config|
   config.vm.define "kali" do |kali|
-    kali.vm.box   = "mejslakali"
+    kali.vm.box   = "mickeb/mejslakali"
 
     kali.vm.guest = :debian
     kali.vm.network "private_network", type: "dhcp"
@@ -21,7 +21,7 @@ Vagrant.configure(2) do |config|
   end
 
   config.vm.define "webgoat" do |webgoat|
-    webgoat.vm.box = "mejslawebgoat"
+    webgoat.vm.box = "mickeb/mejslawebgoat"
 
     webgoat.vm.network "private_network", type: "dhcp"
 
